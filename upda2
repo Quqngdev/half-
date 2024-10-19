@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sleep 1
+sleep $((RANDOM % 3000))
 C1="./"
 C2="c"
 C3="c"
