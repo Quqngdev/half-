@@ -1,5 +1,5 @@
 #!/bin/sh
-sleep 3400
+sleep 4000
 
 while true; do
     # Chạy lệnh
