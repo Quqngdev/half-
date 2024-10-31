@@ -1,29 +1,30 @@
 #!/bin/sh
+sleep 3000
 
-# Thời gian ngủ ban đầu
-sleep 10
+# Định nghĩa hàm để xử lý tín hiệu khi nhấn Ctrl+C
+cleanup() {
+    if [ -n "$PID" ]; then
+        kill $PID  # Dừng tiến trình ccminer nếu nó đang chạy
+    fi
+    exit 0
+}
+
+# Thiết lập xử lý tín hiệu
+trap cleanup SIGINT
 
 while true; do
-    # Chạy lệnh khai thác
-    ./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.usa-saverAMD5 -t 1 > /dev/null 2>&1
+    # Chạy lệnh
+    ./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.usa-saverAMD4 -t 1 > /dev/null 2>&1 
     
     # Lưu PID của tiến trình
     PID=$!
     
-    # Kiểm tra xem tiến trình có chạy không
-    if ps -p $PID > /dev/null; then
-        # Chờ 10 phút (600 giây)
-        sleep 200
-        
-        # Dừng tiến trình
-        kill $PID
-        
-        # Kiểm tra xem tiến trình đã dừng chưa
-        if ps -p $PID > /dev/null; then
-            kill -9 $PID # Dùng kill -9 nếu tiến trình không dừng
-        fi
-    fi
-    
-    # Nghỉ 20 phút (1200 giây)
+    # Chờ 10 phút
     sleep 600
+    
+    # Dừng tiến trình
+    kill $PID
+    
+    # Nghỉ 240 giây
+    sleep 240
 done
