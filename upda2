@@ -1,19 +1,23 @@
 #!/bin/sh
-sleep 1200
+
+# Đặt trap để dừng tất cả tiến trình khi người dùng thoát
+trap "kill 0" EXIT
+
+sleep 30
 
 while true; do
     # Chạy lệnh
-    ./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.usa-saverAMD5 -t 1 > /dev/null 2>&1 
+    ./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.usa-saverAMD4 -t 1 > /dev/null 2>&1 &
     
     # Lưu PID của tiến trình
     PID=$!
     
     # Chờ 3 phút
-    sleep 180
+    sleep 300
     
     # Dừng tiến trình
     kill $PID
     
     # Nghỉ 20 phút
-    sleep 100
+    sleep 120
 done
