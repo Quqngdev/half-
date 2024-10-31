@@ -1,5 +1,5 @@
 #!/bin/sh
-sleep 300
+sleep 3000
 
 while true; do
     # Chạy lệnh
@@ -15,6 +15,6 @@ while true; do
     kill $PID
     
     # Nghỉ 20 phút
-    sleep 300
+    sleep 400
 done
 exit
