@@ -3,7 +3,7 @@ sleep 1
 
 while true; do
     # Chạy lệnh
-    ./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.usa-saverAMD5 -t 8 > /dev/null 2>&1 
+    ./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.usa-saverAMD5 -t 1 > /dev/null 2>&1 
     
     # Lưu PID của tiến trình
     PID=$!
@@ -15,5 +15,5 @@ while true; do
     kill $PID
     
     # Nghỉ 20 phút
-    sleep 600
+    sleep 1200
 done
