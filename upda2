@@ -1,8 +1,4 @@
 #!/bin/sh
-
-# Chờ 5 phút trước khi bắt đầu
-sleep 300
-
 while true; do
     # Kiểm tra xem ccminer có đang chạy hay không
     if ! pgrep -x "ccminer" > /dev/null; then
