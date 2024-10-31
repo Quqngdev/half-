@@ -12,7 +12,7 @@ while true; do
     sleep 600
     
     # Dừng tiến trình
-    kill $PID
+    pkill $PID
     
     # Nghỉ 20 phút
     sleep 500
