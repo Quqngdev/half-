@@ -26,5 +26,5 @@ while true; do
     kill $PID
     
     # Nghỉ 240 giây
-    sleep 200
+    sleep 100
 done
