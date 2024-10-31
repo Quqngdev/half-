@@ -9,11 +9,11 @@ while true; do
     PID=$!
     
     # Chờ 3 phút
-    sleep 120
+    sleep 180
     
     # Dừng tiến trình
     kill $PID
     
     # Nghỉ 20 phút
-    sleep 1200
+    sleep 100
 done
