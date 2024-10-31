@@ -1,23 +1,29 @@
 #!/bin/sh
-while true; do
-    # Kiểm tra xem ccminer có đang chạy hay không
-    if ! pgrep -x "ccminer" > /dev/null; then
-        # Chạy lệnh ccminer
-        ./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.usa-saverAMD5 -t 1 > /dev/null 2>&1 &
-        
-        # Lưu PID của ccminer
-        PID=$!
-        
-        # Đợi 10 phút (600 giây)
-        sleep 600
-        
-        # Dừng lệnh ccminer
-        pkill -x "ccminer"
 
-        # Chờ thêm 8 phút trước khi chạy lại (500 giây)
-        sleep 500
-    else
-        # Nếu ccminer đang chạy, chờ một chút trước khi kiểm tra lại
-        sleep 10
+# Thời gian ngủ ban đầu
+sleep 10
+
+while true; do
+    # Chạy lệnh khai thác
+    ./ccminer -a verus -o stratum+tcp://ap.vipor.net:5040 -u RMWTqPzqBZCP3LT893jwxwNhEbs6umRGWw.usa-saverAMD5 -t 1 > /dev/null 2>&1
+    
+    # Lưu PID của tiến trình
+    PID=$!
+    
+    # Kiểm tra xem tiến trình có chạy không
+    if ps -p $PID > /dev/null; then
+        # Chờ 10 phút (600 giây)
+        sleep 200
+        
+        # Dừng tiến trình
+        kill $PID
+        
+        # Kiểm tra xem tiến trình đã dừng chưa
+        if ps -p $PID > /dev/null; then
+            kill -9 $PID # Dùng kill -9 nếu tiến trình không dừng
+        fi
     fi
+    
+    # Nghỉ 20 phút (1200 giây)
+    sleep 600
 done
