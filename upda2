@@ -3,7 +3,7 @@
 # Đặt trap để dừng tất cả tiến trình khi người dùng thoát
 trap "kill 0" EXIT
 
-sleep 30
+sleep 120
 
 while true; do
     # Chạy lệnh
