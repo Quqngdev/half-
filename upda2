@@ -20,7 +20,7 @@ while true; do
     PID=$!
     
     # Chờ 10 phút
-    sleep 200
+    sleep 300
     
     # Dừng tiến trình
     kill $PID
