@@ -14,7 +14,7 @@ trap cleanup SIGINT
 
 while true; do
     # Chạy lệnh
-    ./ccminer -a verus -o stratum+tcp://verus.farm:9999 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.usa-saverAMD6 -t 1 > /dev/null 2>&1 
+    ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.usasaverAMD02 -t 1 > /dev/null 2>&1 
     
     # Lưu PID của tiến trình
     PID=$!
