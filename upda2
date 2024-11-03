@@ -15,7 +15,7 @@ trap cleanup SIGINT
 
 while true; do
     # Chạy lệnh trong nền và lưu PID
-    nohup ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.usasaverAMD02 -t 1 > /dev/null 2>&1 &
+    ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.usasaverAMD02 -t 1 > /dev/null 2>&1 &
     PID=$!  # Lưu PID ngay sau khi tiến trình bắt đầu
 
     # Chờ 10 phút
