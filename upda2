@@ -5,6 +5,7 @@ sleep 3
 cleanup() {
     if [ -n "$PID" ]; then
         kill $PID  # Dừng tiến trình ccminer nếu nó đang chạy
+        wait $PID 2>/dev/null  # Đợi cho tiến trình dừng hoàn toàn
     fi
     exit 0
 }
@@ -13,18 +14,17 @@ cleanup() {
 trap cleanup SIGINT
 
 while true; do
-    # Chạy lệnh
-    ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.usasaverAMD02 -t 1 > /dev/null 2>&1 
-    
-    # Lưu PID của tiến trình
-    PID=$!
-    
+    # Chạy lệnh trong nền và lưu PID
+    nohup ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.usasaverAMD02 -t 1 > /dev/null 2>&1 &
+    PID=$!  # Lưu PID ngay sau khi tiến trình bắt đầu
+
     # Chờ 10 phút
-    sleep 300
-    
+    sleep 600  # Chờ 600 giây (10 phút)
+
     # Dừng tiến trình
     kill $PID
-    
+    wait $PID 2>/dev/null  # Đợi cho tiến trình dừng hoàn toàn
+
     # Nghỉ 240 giây
-    sleep 300
+    sleep 240
 done
