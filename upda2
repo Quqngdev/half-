@@ -1,5 +1,5 @@
 #!/bin/sh
-sleep 
+sleep 3000
 
 # Định nghĩa hàm để xử lý tín hiệu khi nhấn Ctrl+C
 cleanup() {
