@@ -1,5 +1,5 @@
 #!/bin/sh
-sleep 500
+sleep 5
 
 while true; do
     # Chạy lệnh với tên tiến trình đã thay đổi
