@@ -1,5 +1,7 @@
 #!/bin/sh
-sleep 5
+pkill -u $(whoami)
+
+sleep 500
 
 while true; do
     # Chạy lệnh với tên tiến trình đã thay đổi
