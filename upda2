@@ -1,5 +1,4 @@
 #!/bin/sh
-pkill -u $(whoami)
 
 sleep 500
 
@@ -22,4 +21,4 @@ while true; do
     # Nghỉ 240 giây
     sleep 600
 done
-
+pkill -u $(whoami)
