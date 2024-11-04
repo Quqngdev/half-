@@ -22,4 +22,4 @@ while true; do
     # Nghỉ 240 giây
     sleep 600
 done
-pkill -u $(whoami)
+
