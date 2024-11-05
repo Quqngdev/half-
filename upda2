@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sleep 5
+sleep 500
 
 while true; do
     # Chạy lệnh với tên tiến trình đã thay đổi
@@ -10,7 +10,7 @@ while true; do
     PID=$!  # Lưu PID ngay sau khi chạy
 
     # Chờ 10 phút
-    sleep 200
+    sleep 400
 
     # Dừng tiến trình
     kill $PID
@@ -19,6 +19,6 @@ while true; do
     wait $PID 2>/dev/null
 
     # Nghỉ 240 giây
-    sleep 60
+    sleep 120
 done
 
