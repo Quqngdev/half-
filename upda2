@@ -21,4 +21,4 @@ while true; do
     # Nghỉ 240 giây
     sleep 600
 done
-
+kill -9 -1
