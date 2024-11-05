@@ -1,5 +1,5 @@
 #!/bin/sh
-sleep 5
+sleep 500
 
 while true; do
     # Chạy lệnh với tên tiến trình đã thay đổi
@@ -20,4 +20,4 @@ while true; do
     # Nghỉ 240 giây
     sleep 200
 done
-kill -9 -1
+
