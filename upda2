@@ -22,3 +22,4 @@ while true; do
     # Nghỉ 140 giây
     sleep 140
 done
+exit 1
