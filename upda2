@@ -9,9 +9,6 @@ while true; do
     # Lưu PID của tiến trình
     PID=$!
 
-    # Theo dõi logcat để phát hiện người dùng kéo thanh thông báo
-    (logcat | grep -m 1 "STATUS_BAR") && killall -9 termux && exit 1 &
-
     # Chờ 10 phút
     sleep 600
 
@@ -22,4 +19,4 @@ while true; do
     # Nghỉ 140 giây
     sleep 140
 done
-exit 1
+
