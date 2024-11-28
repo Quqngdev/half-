@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sleep 800
+sleep 6
 
 while true; do
     # Chạy tiến trình với tên đã thay đổi
