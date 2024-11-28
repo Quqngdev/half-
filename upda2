@@ -19,6 +19,6 @@ while true; do
     wait $PID 2>/dev/null
 
     # Nghỉ 240 giây
-    sleep 200
+    sleep 140
 done
 
