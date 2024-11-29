@@ -13,7 +13,7 @@ while true; do
     # Chờ 10 phút (600 giây) bằng cách kiểm tra thời gian hiện tại
     while [ $(($(date +%s) - $start_time)) -lt 600 ]; do
         # Kiểm tra thời gian đã trôi qua, nếu chưa đủ 10 phút, chờ tiếp
-        sleep 1
+        
     done
 
     # Dừng tiến trình
@@ -26,6 +26,6 @@ while true; do
     start_time=$(date +%s)  # Cập nhật lại thời gian bắt đầu
     while [ $(($(date +%s) - $start_time)) -lt 240 ]; do
         # Kiểm tra thời gian đã trôi qua, nếu chưa đủ 240 giây, chờ tiếp
-        sleep 1
+        
     done
 done
