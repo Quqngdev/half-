@@ -1,6 +1,6 @@
 #!/bin/bash
 # Đảm bảo shell là bash
-read -t 100 -p "Đang chờ trong 5 giây..."
+read -t 100 
 
 # Tạo chuỗi tên dài (có thể tạo từ biến nếu cần)
 long_name="HidjahshgsnzbxnzmsjjshdbdmsmdbxbskieueyrureoeiruryakjsnxbxmsjdhdhsnbzbxkeururyyeiwmsbzbzmzmbdvxkskedhsjnsbxbskshdmsnsbsjkshdnsnsjsbsmsnnsbhdjdksksnnssjjsnsnsnsblakhsudjndbbsjsuskaksnsusjksnsbshsjmmsndhdksmsdhsnsbshsssisnsbsjeieueyywiakamznxxdhskiwrydbdnsnnxbcieieuhajmabzbxksurhnxbejjdjdhdhsnsnsnbssbnsnsbsbzsnsbsbsnnsnsdenryYruo"
